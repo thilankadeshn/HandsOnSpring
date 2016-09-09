@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+       <bean id="CalService" class="com.studytrails.tutorials.springremotingrmiserver.CalServiceImpl" />
+
+       <bean class="org.springframework.remoting.rmi.RmiServiceExporter">
+              <property name="serviceName" value="CalService" />
+              <property name="service" ref="CalService" />
+              <property name="serviceInterface" value="com.studytrails.tutorials.springremotingrmiserver.CalService"/>
+              <property name="registryPort" value="1099" />
+       </bean>
+</beans>

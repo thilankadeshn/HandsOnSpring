@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<persistence xmlns="http://java.sun.com/xml/ns/persistence"
+             version="1.0">
+    <persistence-unit name="studentPersistenceUnit" transaction-type="JTA" >
+        <!--<provider>org.hibernate.jpa.HibernatePersistenceProvider</provider>
+        <jta-data-source>java:/oneskyDB</jta-data-source>
+        <class>com.assign.model.Student</class>
+        <properties>
+            &lt;!&ndash; Properties for Hibernate &ndash;&gt;
+            <property name="hibernate.show_sql" value="false" />
+            <property name="hibernate.transaction.jta.platform"
+                      value="org.hibernate.service.jta.platform.internal.JBossAppServerJtaPlatform" />
+        </properties>-->
+        <!--<class> com.Student </class>-->
+    </persistence-unit>
+</persistence>
