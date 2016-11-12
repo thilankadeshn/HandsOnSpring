@@ -35,8 +35,8 @@ http://www.springframework.org/schema/beans http://www.springframework.org/schem
            class="org.springframework.jdbc.datasource.DriverManagerDataSource">
          <property name="driverClassName" value="oracle.jdbc.OracleDriver"></property>
          <property name="url" value="jdbc:oracle:thin:@192.168.1.26:1521:ORCL"/>
-         <property name="username" value="ONESKYDB"/>
-         <property name="password" value="passonesky"/>
+         <property name="username" value="username"/>
+         <property name="password" value="password"/>
      </bean>
     <tx:annotation-driven transaction-manager="transactionManager"/>
     <!-- <bean id="transactionManager" class="org.springframework.transaction.jta.JtaTransactionManager"/>-->
@@ -71,8 +71,8 @@ http://www.springframework.org/schema/tx/spring-tx.xsd http://www.springframewor
         <property name="driverClassName" value="oracle.jdbc.OracleDriver"/>
      &lt;!&ndash;   <property name="driverClassName" value="com.oracle.ojdbc14"/>&ndash;&gt;
         <property name="url" value="jdbc:oracle:thin:@192.168.1.26:1521:ORCL"/>
-        <property name="username" value="ONESKYDB"/>
-        <property name="password" value="passonesky"/>
+        <property name="username" value="username"/>
+        <property name="password" value="password"/>
     </bean>
 
     <bean id="entityManagerFactory" class="org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean">
